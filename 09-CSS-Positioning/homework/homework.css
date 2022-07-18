@@ -7,32 +7,89 @@ archivo en cualquiera de estas carpetas, estás en el lugar equivocado.
 
 /* Arrancaremos este ejercicio por vos: */
 #ejercicioUno {
-
+display: block;
+text-align: center;
 }
 
 
 /* Ejercicio 2: Posicionar el header */
 
 /* Acá va tu código */
-
+#ejercicioDos {
+    display: none;   
+   }
 
 
 /* Ejercicio 3: */
 
 /* Acá va tu código */
-
+#ejercicioTres {
+    display: block;
+    margin-top: 100px;
+    margin-left: 200px;
+}
 
 
 /* Ejercicio 4: */
 
 /* Acá va tu código */
-
+#ejercicioCuatro {
+    position: fixed;
+    top: 0; left: 0;
+}
 
 
 /* Ejercicio 5: */
 
 /* Acá va tu código */
-
+#ejercicioCinco {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
 
 
 /* Ejercicio 6. */
+#ejercicioCinco {
+    display: flex;
+    flex-direction: row-reverse;
+}
+/* Ejercicio 7. */
+#ejercicioSiete {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+}
+#elementoUno {
+    display: flex;
+    align-self: flex-end;
+    color: darkgreen;
+    background-color: lightgreen;
+    height: 397px;
+    border-style: solid;
+}
+#elementoDos {
+    display: flex;
+    align-self: center;
+    color: forestgreen;
+    background-color: khaki;
+    height: 397px;
+    border-style: double;
+}
+#elementoTres {
+    display: flex;
+    align-self: center;
+    color: blue;
+    background-color: darkseagreen;
+    height: 397px;
+    border-style: groove;
+}
+#elementoCuatro {
+    display: flex;
+    justify-content: center;
+    color: crimson;
+    background-color: burlywood;
+    width: 120px;
+    height: 397px;
+    border-style: dotted;
+}

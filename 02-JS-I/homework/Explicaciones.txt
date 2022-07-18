@@ -1,0 +1,22 @@
+Escribe explicando los siguientes conceptos como si se lo estuviera explicando 
+a un niño de 12 años. Hacer esto te ayudará a descubrir rápidamente 
+cualquier agujero en tu comprensión.
+
+Variables:  es una manera de darle un valor a un dato y guardarlo para usarlo después.
+ Usando la clave var espacio y el nombre de la variable para luego poder referenciarla. 
+ Se puede simplemente declararla o se le puede asignar un valor usando el simbolo = .
+
+Strings:  son bloques de texto que se definen entre comillas simples o dobles.
+
+Funciones (argumentos, return): las funciones son objetos invocables. 
+Dentro de ellas pondremos el codigo a ejecutar para hacer algo. 
+
+Los argumentos son variables dentro del parentesis de una funcion separadas por comas.
+
+Return es una declaración de retorno de datos, allí se detiene y devuelve lo que se pide.
+
+Declaraciones if: es la clave usada para controlar el flujo de datos y verificar 
+si su condición devuelve true o false.
+
+Valores booleanos (true, false): Asignación binaria para definir un dato 
+como true o false.
