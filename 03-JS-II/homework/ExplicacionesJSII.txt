@@ -1,0 +1,16 @@
+Homework: Javascript II
+
+Escribe explicaciones de los siguientes conceptos 
+como si se lo estuvieras explicando a un niño de 12 años. 
+Hacer esto te ayudará a descubrir rápidamente cualquier agujero en tu comprensión.
+
+for : Es una instrucción para correr bucles. Para ello se usa FOR seguido de una 
+      variable que debemos declarar, una condición que se debe cumplir y su incremento.
+ && : Es un operador lógico que significa AND y se usa para comparar dos expresiones.
+     Arrojando True si ambas son iguales o False si ambas o alguna es distinta.
+ || : Es un operador lógico que significa OR y se usa para comparar dos expresiones.
+     Si alguna de ellas es verdadera será True, también si ambas lo son pero si
+     si ambas son falsas arrojará False. 
+  ! : Es un operador de comparación que significa NOT y se usa para preguntar
+     lo contrario de una expresión.
+     
