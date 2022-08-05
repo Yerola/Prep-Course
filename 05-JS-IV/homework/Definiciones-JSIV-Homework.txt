@@ -15,7 +15,7 @@ Objetos: son contenedores de datos que a diferencia de los arreglos pueden
          pares de clave:valor.
 
 Propiedades: Es la manera en la que se puede acceder a las diferentes 
-             claves de un objeto, .
+             claves de un objeto.
              Se puede hacer mediante DOT NOTATION, con un punto, o utilizando 
              corchetes [], en ese caso debe deben llamarse como cadenas de datos o numeros
              o una variable que apunte a ellos encerrándo lo contenido entre corchetes,
@@ -28,4 +28,7 @@ Bucle for…in: Es un bucle usado para iterar objetos y recorrer todas sus clave
               la palabra "in" y el objeto que queremos recorrer.
 
 Notación de puntos vs notación de corchetes: ambas son maneras valederas para acceder 
-            a un objeto y sus claves y valores o asignarlos. 
+            a un objeto y sus claves y valores o asignarlos. Pero dependiendo si
+            precisamos acceder a valores o a argumentos, utilizaremos uno u otro. 
+            y si además referenciaremos Strings, le adicionaremos comillas a los 
+            braquets.
