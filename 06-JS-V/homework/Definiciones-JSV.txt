@@ -1,0 +1,15 @@
+Homework: Javascript V
+
+Instrucciones
+
+En un archivo de texto separado que debes crear, 
+escribe explicaciones de los siguientes conceptos 
+como si se lo estuvieras explicando a un niño de 12 años. 
+Hacer esto te ayudará a descubrir rápidamente cualquier agujero en tu comprensión.
+
+Prototype: Es un método de las clases o constructores. Se establece una vez, 
+y cada objeto de esa clase luego tendrán acceso a él, ahorrando memoria.
+
+Constructors (de Clases):Son plantillas fuente a las que se puede acceder,
+                         pudiendo crear muchos objetos que compartan mismas
+                         propiedades y/o métodos.
