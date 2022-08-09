@@ -1,0 +1,27 @@
+Homework:
+
+Javascript VI
+
+Instrucciones
+
+En un archivo de texto separado que debes crear, 
+escribe explicaciones de los siguientes conceptos 
+como si se lo estuvieras explicando a un niño de 12 años. 
+Hacer esto te ayudará a descubrir rápidamente cualquier agujero en tu comprensión.
+
+Funciones Callback: son funciones pasadas como argumentos a otras funciones.
+                    
+.forEach: es un bucle for integrado en cada array e itera sobre cada elemento
+          de una matriz. Puede tomar dos argumentos, el elemento en sí y el índice.
+
+.reduce: ejecuta un bucle en una matriz, reduciendo todos los elementos a uno único
+        que se devuelve. Toma como argumentos un acumulador (acc) y el elemento.
+        Siempre debe contener una declaración de retorno.
+        Puede contener un argumento opcional, el acc de arranque, si no lo tiene
+        comenzará en el primer elemento.
+        Siempre devolverá el acc cuando termine de recorrer los elementos.
+
+.map: se usa cuando queremos cambiar cada elemento de una matriz.
+      retorna con una función de llamada como único argumento.
+      Tiene un elemento e índice opcional.
+      Devuelve toda la matriz.
