@@ -28,7 +28,7 @@ function numberOfCharacters(string) {
 	if (!obj [string[i]]){
      obj[string[i]] = 0;
   }
-	obj[string[i]] += 1;
+	obj[string[i]] = obj[string[i]] + 1;  // obj[string[i]] += 1;
   };
   return obj;
 }
