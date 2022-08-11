@@ -12,7 +12,7 @@ function crearGato (nombre, edad) {
     meow: function () {
       return 'Meow!';
     }
-  };
+  }
   return gato;
 }
 
@@ -61,7 +61,7 @@ function nuevoUsuario (nombre, email, password) {
   nombre: nombre,
   email: email,
   password: password,
- };
+ }
  return nuevoUsuario;
 }
 
@@ -71,7 +71,7 @@ function tieneEmail (usuario) {
   // Tu código:
   if (usuario['email']) { 
   return true;
-}  else { 
+} else { 
   return false;
 }
 }
@@ -93,7 +93,7 @@ function verificarPassword (usuario, password) {
   // Devuelve "true" si coinciden
   // De lo contrario, devuelve "false"
   // Tu código:
-  if (usuario['password'] === password) {
+  if (usuario["password"] === password) {
     return true;
   } else {
     return false;
@@ -125,7 +125,7 @@ function pasarUsuarioAPremium (usuarios) {
   // Define cada propiedad "esPremium" de cada objeto como "true"
   // Devuelve el array de usuarios
   // Tu código:
-  for(var i = 0; i < usuarios.length; i++) {
+  for (var i = 0; i < usuarios.length; i++) {
   usuarios[i].esPremium = true;
 }
 return usuarios;
@@ -139,7 +139,7 @@ function sumarLikesDeUsuario (usuario) {
   // Devuelve la suma
   // Tu código:
   var suma = 0;
-  for(var i = 0; i < usuario.posts.length; i++) {
+  for (var i = 0; i < usuario.posts.length; i++) {
     suma = suma + usuario.posts[i].likes;
   }
   return suma;
@@ -157,8 +157,8 @@ function agregarMetodoCalculoDescuento (producto) {
   // Tu código:
 
   producto.calcularPrecioDescuento = function() {
-    return this.precio - ( this.precio * this.porcentajeDeDescuento );
-  };
+    return this.precio - (this.precio * this.porcentajeDeDescuento);
+  }
   return producto;
 }
 
