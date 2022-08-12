@@ -36,7 +36,7 @@ function sumarArray(numeros, cb) {
   //  cb(suma);
   // Segunda opcion
   var suma = 0;
-     for (let i = 0; i < numeros.length; i++) {
+     for (var i = 0; i < numeros.length; i++) {
 	   suma = suma + numeros[i];
 	}
    return cb (suma);
@@ -46,29 +46,32 @@ function forEach(array, cb) {
   // Itera sobre la matriz "array" y pasa los valores al callback uno por uno
   // Pista: Estarás invocando a `cb` varias veces (una por cada valor en la matriz)
   // primer opcion
-  // array.forEach(function (elementos, index) {
-  // cb (elementos);
-  // });
+  array.forEach (function (elementos, index) {
+  cb (elementos);
+  });
   //Tu código:
-  for(var i = 0; i < array.length; i++) {
-    cb(array[i]);
-  }
+  // for (var i = 0; i < array.length; i++) {
+  //   cb (array[i]);
+  // }
 }
 
 function map(array, cb) {
   // Crea un nuevo array
-  // Itera sobre cada valor en "array", pásalo a `cb` y luego ubicar el valor devuelto por `cb` en un nuevo array
+  // Itera sobre cada valor en "array", pásalo a `cb` y luego ubicar el valor 
+  // devuelto por `cb` en un nuevo array.
   // El nuevo array debe tener la misma longitud que el array del argumento
+  //
   // var array = [1,2,3,4,5];
-  // function cb (el){
+  // function cb (el) {
   // console.log (el);
   //};
   // nuevoarray = [];
   // var nuevoArray = [];
-  // for(var i = 0; i < array.length; i++) {
+  // for (var i = 0; i < array.length; i++) {
   //   nuevoArray.push (cb (array[i]));
   //   nuevoArray[i] = cb (array[i]);
   // };
+  //
   //Tu código:
   var nuevoArray = array.map (function(el) {
     return cb(el);
@@ -80,12 +83,13 @@ function filter(array) {
   //Filtrar todos los elementos del array que comiencen con la letra "a".
   //Devolver un nuevo array con los elementos que cumplen la condición
   //Tu código:
-  var NuevoArray = array.filter (function(el){
+  var NuevoArray = array.filter (function(el) {
   if (el[0] === "a") {
   return el;
   }
   });
   return NuevoArray;  
+  }
   // var nuevoArray = [];
   // for(let i = 0; i<array.length; i++) {
   //   if(array[i][0] === "a") {
@@ -93,7 +97,7 @@ function filter(array) {
   //   }
   // }
   // return nuevoArray;
-}
+  //
 
 // No modificar nada debajo de esta línea
 // --------------------------------
