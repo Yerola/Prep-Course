@@ -13,20 +13,22 @@ function deObjetoAmatriz(objeto){
   // return Object.entries (objeto);
   var NuevoArray = [];
   for (var clave in objeto) {
-   NuevoArray.push([clave,objeto[clave]]);
+   NuevoArray.push ([clave,objeto[clave]]);
   };
   return NuevoArray;
 }
 
 
 function numberOfCharacters(string) {
-  //La función recibe un string. Recorre el srting y devuelve el caracter con el número de veces que aparece 
-  //en formato par clave-valor.
-  //Ej: Recibe ---> "adsjfdsfsfjsdjfhacabcsbajda" || Devuelve ---> { a: 5, b: 2, c: 2, d: 4, f: 4, h:1, j: 4, s: 5 } 
+  //La función recibe un string. Recorre el srting y devuelve el caracter con el número 
+  //de veces que aparece 
+  //en formato par clave-valor. (crear objeto vacio entre llaves {})
+  //Ej: Recibe ---> "adsjfdsfsfjsdjfhacabcsbajda" || 
+  //Devuelve ---> { a: 5, b: 2, c: 2, d: 4, f: 4, h:1, j: 4, s: 5 } 
   //Escribe tu código aquí
   var obj = {};
   for (var i = 0; i < string.length; i++) {
-	if (!obj [string[i]]){
+	if (!obj [string[i]]) {
      obj[string[i]] = 0;
   }
 	obj[string[i]] = obj[string[i]] + 1;  // obj[string[i]] += 1;
@@ -55,7 +57,8 @@ function capToFront(s) {
 
 function asAmirror(str) {
   //La función recibe una frase. 
-  //Escribe una función que tome la frase recibida y la devuelva de modo tal que se pueda leer de izquierda a derecha 
+  //Escribe una función que tome la frase recibida y la devuelva de modo tal 
+  //que se pueda leer de izquierda a derecha 
   //pero con cada una de sus palabras invertidas, como si fuera un espejo.
   //Ej: Recibe ---> "The Henry Challenge is close!" || Devuelve ---> "ehT yrneH egnellahC si !esolc"
   //Escribe tu código aquí
@@ -73,8 +76,8 @@ function asAmirror(str) {
 
 function capicua(numero){
   //Escribe una función, la cual recibe un número y determina si es o no capicúa.
-  //La misma debe retornar: "Es capicua" si el número se número que se lee igual de 
-  //izquierda a derecha que de derecha a izquierda. Caso contrario retorna "No es capicua"
+  //La misma debe retornar: "Es capicua" si el que se lee es igual de 
+  //izquierda a derecha que de derecha a izquierda. Caso contrario retorna "No es capicua".
   //Escribe tu código aquí
   // var capicua= numero.toString();
   // var invertido = capicua.split("").reverse().join("");
@@ -103,7 +106,7 @@ function deleteAbc(cadena){
   //Escribe tu código aquí
   var cadenaNueva = "";
   for (var i = 0; i < cadena.length; i++) {
-    if (cadena[i] !== "a" && cadena[i] !== "b" && cadena[i] !== "c"){
+    if (cadena[i] !== "a" && cadena[i] !== "b" && cadena[i] !== "c") {
        cadenaNueva = cadenaNueva + cadena[i]; // cadenaNueva += cadena[i];
   }
  }
@@ -112,8 +115,13 @@ function deleteAbc(cadena){
 
 
 function sortArray(arr) {
-  //La función recibe una matriz de strings. Ordena la matriz en orden creciente de longitudes de cadena
-  //Ej: Recibe ---> ["You", "are", "beautiful", "looking"] || Devuelve ---> [“You", "are", "looking", "beautiful"]
+  //La función recibe una matriz de strings. 
+  //Ordena la matriz en orden creciente de longitudes de cadena.
+  //Ej: Recibe ---> ["You", "are", "beautiful", "looking"] || 
+  //Devuelve ---> [“You", "are", "looking", "beautiful"]
+  //Si son iguales, devolveremos 0.
+  //Si "a" debe ir ordenado antes que "b", entonces devolvemos un número menor que 0.
+  //Si "a" debe ir ordenado después que "b", entonces devolvemos un número mayor que 0.
   //Escribe tu código aquí
   // for (var i = 0; i < arr.length - 1; i++) {
   //  while ( arr[i].length > arr[i + 1].length){
